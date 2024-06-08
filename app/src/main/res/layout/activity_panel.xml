@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PanelActivity">
+
+    <!--texts layout-->
+    <LinearLayout
+        android:id="@+id/main_texts_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <!--Daily consumption text-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily consumption"/>
+
+        <!--000 text-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:text="000"/>
+
+        <!--000 text-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ml"/>
+
+    </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:padding="22dp">
+
+        <!--layout left buttons -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/left_buttons_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginEnd="22dp">
+
+            <!--button 250 ml -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_BTN_250ml"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minLines="1"
+                android:maxLines="1"
+                android:text="250 ml"
+                android:backgroundTint="@color/light_blue_400"/>
+
+            <!--button 500 ml -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_BTN_550ml"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minLines="1"
+                android:maxLines="1"
+                android:text="500 ml"
+                android:backgroundTint="@color/light_blue_400"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--layout right buttons -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/right_buttons_layout"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!--button 330 ml -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_BTN_330ml"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minLines="1"
+                android:maxLines="1"
+                android:text="330 ml"
+                android:backgroundTint="@color/light_blue_400"/>
+
+            <!--button 1000 ml -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_BTN_1000ml"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minLines="1"
+                android:maxLines="1"
+                android:text="1000 ml"
+                android:backgroundTint="@color/light_blue_400"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>
