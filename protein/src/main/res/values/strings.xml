@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Protein</string>
+    <string name="app_name">Be Strong</string>
+    <string name="title">Trust The Process!</string>
+    <string name="measurement">gr</string>
+
+    <string name="button_1">10 gr</string>
+    <string name="button_2">25 gr</string>
+    <string name="button_3">20 gr</string>
+    <string name="button_4">30 gr</string>
+
 </resources>

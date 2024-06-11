@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Be Hydrate</string>
+    <string name="title">Drink Water!</string>
+    <string name="measurement">ml</string>
+
+    <string name="button_1">250 ml</string>
+    <string name="button_2">500 ml</string>
+    <string name="button_3">330 ml</string>
+    <string name="button_4">1000 ml</string>
+</resources>

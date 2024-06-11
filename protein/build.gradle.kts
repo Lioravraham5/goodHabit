@@ -33,6 +33,8 @@ android {
 
 dependencies {
 
+    implementation(project(":common")) //import common
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
