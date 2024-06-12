@@ -5,4 +5,5 @@
     <color name="color_button">#29B6F6</color>
     <color name="color_circle_finished">#4FC3F7</color>
     <color name="color_circle_unfinished">#CFCFCF</color>
+    <color name="color_background_app">#E3F2FD</color>
 </resources>

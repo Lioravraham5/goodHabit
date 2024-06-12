@@ -7,4 +7,5 @@
     <color name="color_circle_unfinished">#CFCFCF</color>
     <color name="color_button_reset">#9E9E9E</color>
     <color name="color_button_edit">#FFB74D</color>
+    <color name="color_background_app">#FAFAFA</color>
 </resources>

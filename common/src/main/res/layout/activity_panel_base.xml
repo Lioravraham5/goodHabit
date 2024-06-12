@@ -5,12 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color_background_app"
     tools:context=".BasePanelActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/title"
+        android:textStyle="bold"
         android:textSize="@dimen/main_label_size"
         android:layout_marginTop="150dp"
         android:layout_alignParentTop="true"
@@ -38,6 +40,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/daily_consumption_label"
                 android:textSize="@dimen/labels_size"
+                android:textStyle="bold"
                 android:layout_marginEnd="8dp"/>
 
             <!--000 text-->
@@ -46,6 +49,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/labels_size"
+                android:textStyle="bold"
                 android:text="000"/>
 
             <!--"/" text-->
@@ -53,6 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/labels_size"
+                android:textStyle="bold"
                 android:text="/"/>
 
             <!--000 text-->
@@ -62,6 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:textSize="@dimen/labels_size"
+                android:textStyle="bold"
                 android:text="000"/>
 
             <!--measurement text-->
@@ -69,6 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/labels_size"
+                android:textStyle="bold"
                 android:text="@string/measurement"/>
 
         </LinearLayout>
@@ -79,8 +86,6 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            app:circle_progress="50"
-            app:circle_max="100"
             app:circle_text_size="0sp"
             app:circle_finished_color="@color/color_circle_finished"
             app:circle_unfinished_color="@color/color_circle_unfinished" />
@@ -94,7 +99,7 @@
         android:orientation="vertical"
         android:layout_centerInParent="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="100dp"
         android:padding="22dp">
 
         <!--layouts vertical buttons -->
@@ -198,8 +203,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:minLines="1"
-                    android:maxLines="1"
                     android:src="@drawable/down"
                     android:backgroundTint="@color/color_button_edit"/>
 
@@ -209,8 +212,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:minLines="1"
-                    android:maxLines="1"
                     android:src="@drawable/up"
                     android:backgroundTint="@color/color_button_edit"/>
 

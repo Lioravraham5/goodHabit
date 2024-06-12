@@ -34,7 +34,7 @@ public class BasePanelActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_panel_base);
 
-        appManager = new AppManager(dataManagerBase.getDefaultDailyConsumptionLimit());
+        appManager = new AppManager(this, dataManagerBase.getDefaultDailyConsumptionLimit());
 
         findViews();
         initialUI();
@@ -47,6 +47,13 @@ public class BasePanelActivity extends AppCompatActivity {
         main_BTN_up.setOnClickListener(view -> addLimit());
         main_BTN_down.setOnClickListener(view -> reduceLimit());
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Initialize UI with saved values when the activity resumes
+        initialUI();
     }
 
     private void reset() {
