@@ -11,5 +11,6 @@ public class DataManagerProtein extends DataManager {
         super();
         defaultDailyConsumptionLimit = 60;
         buttonsValues =new ArrayList<>(Arrays.asList(10, 25, 20, 30));
+        factorLimit = 5;
     }
 }

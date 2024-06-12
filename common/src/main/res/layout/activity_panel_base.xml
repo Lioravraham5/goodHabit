@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".BasePanelActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="@dimen/main_label_size"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true">
+    </TextView>
+
     <!--texts layout-->
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
@@ -27,6 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/daily_consumption_label"
+                android:textSize="@dimen/labels_size"
                 android:layout_marginEnd="8dp"/>
 
             <!--000 text-->
@@ -34,12 +45,14 @@
                 android:id="@+id/panel_base_daily_consumption_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/labels_size"
                 android:text="000"/>
 
             <!--"/" text-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/labels_size"
                 android:text="/"/>
 
             <!--000 text-->
@@ -48,12 +61,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
+                android:textSize="@dimen/labels_size"
                 android:text="000"/>
 
             <!--measurement text-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/labels_size"
                 android:text="@string/measurement"/>
 
         </LinearLayout>
@@ -61,11 +76,12 @@
         <!-- <a> Arc progressbar xml</a> -->
         <com.github.lzyzsd.circleprogress.CircleProgress
             android:id="@+id/circle_progress"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_gravity="center"
             app:circle_progress="50"
             app:circle_max="100"
+            app:circle_text_size="0sp"
             app:circle_finished_color="@color/color_circle_finished"
             app:circle_unfinished_color="@color/color_circle_unfinished" />
 
@@ -78,6 +94,7 @@
         android:orientation="vertical"
         android:layout_centerInParent="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
         android:padding="22dp">
 
         <!--layouts vertical buttons -->
@@ -162,24 +179,42 @@
             <!--button reset -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/main_BTN_reset"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minLines="1"
                 android:maxLines="1"
                 android:text="@string/reset"
-                android:backgroundTint="@color/color_button"/>
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/color_button_reset"/>
 
-            <!--button edit -->
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/main_BTN_edit"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:minLines="1"
-                android:maxLines="1"
-                android:text="@string/edit"
-                android:backgroundTint="@color/color_button"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!--button down -->
+                <ImageButton
+                    android:id="@+id/main_BTN_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minLines="1"
+                    android:maxLines="1"
+                    android:src="@drawable/down"
+                    android:backgroundTint="@color/color_button_edit"/>
+
+                <!--button up -->
+                <ImageButton
+                    android:id="@+id/main_BTN_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minLines="1"
+                    android:maxLines="1"
+                    android:src="@drawable/up"
+                    android:backgroundTint="@color/color_button_edit"/>
+
+            </LinearLayout>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

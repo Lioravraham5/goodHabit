@@ -11,6 +11,7 @@ public class DataManagerWater extends DataManager {
         super();
         defaultDailyConsumptionLimit = 3000;
         buttonsValues =new ArrayList<>(Arrays.asList(250, 500, 330, 1000));
+        factorLimit = 100;
     }
 
 

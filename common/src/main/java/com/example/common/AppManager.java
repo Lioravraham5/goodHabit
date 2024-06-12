@@ -36,9 +36,23 @@ public class AppManager {
 
     public void addDailyConsumptionValue(int value){
         dailyConsumptionValue += value;
+        if(dailyConsumptionValue > dailyConsumptionLimit)
+            dailyConsumptionValue = dailyConsumptionLimit;
     }
 
-    public void ResetDailyConsumptionValue(){
+    public void resetDailyConsumptionValue(){
         dailyConsumptionValue = 0;
+    }
+
+    public void addLimit(int factorLimit){
+        dailyConsumptionLimit += factorLimit;
+    }
+
+    public void reduceLimit(int factorLimit){
+        int temp = dailyConsumptionLimit - factorLimit;
+        if(temp >= dailyConsumptionValue)
+            dailyConsumptionLimit = temp;
+        if(temp < 0)
+            dailyConsumptionLimit = 0;
     }
 }

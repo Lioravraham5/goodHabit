@@ -6,6 +6,7 @@ public abstract class DataManager {
 
     protected int defaultDailyConsumptionLimit;
     protected ArrayList<Integer> buttonsValues;
+    protected int factorLimit;
 
     public int getDefaultDailyConsumptionLimit() {
         return defaultDailyConsumptionLimit;
@@ -22,6 +23,15 @@ public abstract class DataManager {
 
     public DataManager setButtonsValues(ArrayList<Integer> buttonsValues) {
         this.buttonsValues = buttonsValues;
+        return this;
+    }
+
+    public int getFactorLimit() {
+        return factorLimit;
+    }
+
+    public DataManager setFactorLimit(int factorLimit) {
+        this.factorLimit = factorLimit;
         return this;
     }
 }
